@@ -11,9 +11,8 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark color-primario-mio">
         <div class="container color-texto-mio">
-            <!--<a class="navbar-brand" href="./index.html">Gimnasio Grecia</a>-->
-            <a class="navbar-brand" href="./index.html"><img class="imagen-logo" src="media/favicon.jpg"></a>
-            <span class="h3 color-texto-mio mx-3">Gimnasio Grecia</span>
+            <a class="navbar-brand" href="./index.html"><img class="imagen-logo" src="media/favicon.jpg"/>
+            <span class="h3 color-texto-mio mx-3">Gimnasio Grecia</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,7 +27,7 @@
         </div>
     </nav>
 
-    <header class="color-primario-mio text-white text-center py-5">
+    <header class="header-mio color-primario-mio text-white text-center py-5 ">
         <div class="container">
             <h1>Bienvenido a Gimnasio Grecia</h1>
             <p>Transforma tu cuerpo, transforma tu vida</p>
@@ -36,42 +35,136 @@
         </div>
     </header>
 
-    <section id="noticias" class="container py-5 text-center">
-        <h2>Noticias relevantes</h2>
-        <a href=""></a>
+    <div id="carruselIndex" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carruselIndex" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carruselIndex" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carruselIndex" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="media/pilates-carrusel.JPG" class="d-block w-100 imagen-mio-carrusel" alt="Pilates">
+            </div>
+            <div class="carousel-item">
+                <img src="media/programa-fpr-carrusel.JPG" class="d-block w-100 imagen-mio-carrusel" alt="FPR">
+            </div>
+            <div class="carousel-item">
+                <img src="media/rutina-chicas-carrusel.jpg" class="d-block w-100 imagen-mio-carrusel" alt="Rutina para chicas">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselIndex" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselIndex" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="bg-light py-5 text-center">
+    <section id="servicios" class="bg-light py-5 text-center">
         <div class="container">
-            <h2>Nuestros Servicios</h2>
+            <h2 class="margen-inferior-h">Nuestros Servicios</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <h4>Entrenamiento Personalizado</h4>
-                    <p>Planes de entrenamiento adaptados a ti.</p>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrenamiento Personalizado</h5>
+                            <p class="card-text">Planes de entrenamiento totalmente adaptado por un profesional del ambito.</p>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle color-primario-mio" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Más info</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <li><a class="dropdown-item" href="./contacto.html">Contactanos</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="./servicios.html">Servicios</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <h4>Clases Grupales</h4>
-                    <p>Pilates, Karate, Spinning y más.</p>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Clases Grupales</h5>
+                            <p class="card-text">Pilates, Karate, Spinning y más.</p>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle color-primario-mio" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Más info</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <li><a class="dropdown-item" href="./contacto.html">Contactanos</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="./servicios.html">Servicios</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <h4>Nutrición</h4>
-                    <p>Asesoría nutricional para maximizar tus resultados.</p>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Nutrición</h5>
+                            <p class="card-text">Asesoría nutricional de un profesional para maximizar tus resultados.</p>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle color-primario-mio" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Más info</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <li><a class="dropdown-item" href="./contacto.html">Contactanos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container py-5 text-center">
-        <h2>Contacto</h2>
-        <p>Email: gymgrecia@gmail.com | Tel:  955 81 58 52</p>
+    <section class="container my-5">
+        <h2 class="text-center margen-inferior-h">Preguntas que pueden servir de ayuda</h2>
+        <div class="accordion" id="acordeonPreguntas">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    ¿Que horarios tenemos?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">De lunes a viernes, de 09:00 a 13:30 y de 16:00 a 21:30.<br>El horario puede cambiar en dias festivos y visperas de festivos.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        ¿Hay algun costo de inscripcion y matricula?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">No hay costos de inscripcion ni de matricula, tan solo pagas la mensualidad.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    ¿Hay permanencia minima obligatoria?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">No hay permanecia ni tiempo minimo. Puedes pagar dias sueltos, bonos de una cantidad de dias o mensualidad.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    ¿Hay algun tipo de descuento familiar?
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Tenemos descuento por inscripcion de 2 o mas miembros de la familia.<br>Tambien tenemos descuentos para parejas.</div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Gym FitPower. Todos los derechos reservados.</p>
+    <footer class="color-footer-mio text-white text-center py-3">
+        <p>&copy; 2025 Gimnasio Grecia. Todos los derechos reservados.</p>
         <p> Calle San Sebastián, 3, 41720 Los Palacios y Villafranca, Sevilla</p>
     </footer>
 

@@ -1,9 +1,11 @@
 :root {
-    --color-primario-mio: #3700ff;
+    --color-primario-mio: #27499e;
     --color-texto-mio: hsl(0, 0%, 96%);
     --color-text-link-mio: var(--color-texto-mio);
     --color-text-link-hover-mio: hsl(0, 0%, 77%);
-    --btn-amarillo-mio: #ebc700;
+    --btn-amarillo-mio: #deba17;
+    --btn-amarillo-mio-hover: #c1a112;
+    --color-footer-mio: #2e2e2e;
 }
 
 .color-primario-mio{
@@ -29,4 +31,30 @@
 
 .btn-amarillo-mio{
     background-color: var(--btn-amarillo-mio);
+}
+
+.btn-amarillo-mio:hover{
+    background-color: var(--btn-amarillo-mio-hover);
+}
+
+.imagen-mio-carrusel{
+    width: 100vw;
+    max-height: 80vh;
+}
+
+.carrusel-flechas{
+    color: var(--btn-amarillo-mio);
+}
+
+.margen-inferior-h{
+    margin-bottom: 30px;
+}
+
+.color-footer-mio{
+    background-color: var(--color-footer-mio);
+}
+
+.header-mio{
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
 }
