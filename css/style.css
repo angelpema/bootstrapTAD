@@ -57,8 +57,13 @@
 .header-mio{
     padding-top: 30px !important;
     padding-bottom: 30px !important;
+    border-top: solid var(--color-footer-mio) 2px;
 }
 
 button{
     box-shadow: none !important;
+}
+
+.fotos-card{
+    width: 80%;
 }

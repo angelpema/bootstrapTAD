@@ -9,27 +9,83 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-primary">
-        <a class="navbar-brand" href="./index.html">Gimnasio Grecia</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
-                <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
-                <li class="nav-item"><a class="nav-link" href="./juanSanchez.html">Juan Sanchez</a></li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark color-primario-mio">
+        <div class="container-fluid color-texto-mio">
+            <a class="navbar-brand" href="./index.html"><img class="imagen-logo" src="media/favicon.jpg"/>
+            <span class="h3 color-texto-mio mx-3">Gimnasio Grecia</span></a>
+            <button class="navbar-toggler toggler-mio" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link nav-link-mio" href="./nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-mio" href="./servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-mio" href="./contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-mio" href="./juanSanchez.html">Juan Sanchez</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <header class="bg-primary text-white text-center py-5">
+
+    <header class="header-mio color-primario-mio text-white text-center py-5 ">
         <div class="container">
-            <h1>Bienvenido a Gimnasio Grecia</h1>
-            <p>Transforma tu cuerpo, transforma tu vida</p>
-            <a href="./contacto.html" class="btn btn-light">Únete ahora</a>
+            <h1>¿Quieres saber mas sobre nosotros?</h1>
         </div>
     </header>
+
+    <section id="sobre-nosotros" class="bg-light py-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="fotos-card" src="media/hombre-fuerte.jpg" alt="Steve Reeves">
+                            <h4 class="card-title">¿Por que Gimnasio Grecia?</h4>
+                            <p class="card-text">En el comienzo, nuestro gimnasio se conocía como: Gimnasio Grecia. Un nombre escogido para hacer referencia a la búsqueda 
+                                del ideal de belleza de la antigua Grecia, donde se valoraba la perfección atlética y la proporción balanceada del físico. 
+                                Cuerpos musculosos, atléticos y estéticamente proporcionados, sin ser excesivamente voluminosos.
+                                <br>Cuando hablamos de culturismo, nuestro ideal sigue siendo el mismo. La estética, proporción, densidad y simetría, 
+                                siempre estarán por encima de la masa y el volumen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="fotos-card" src="media/favicon.jpg" alt="Logo">
+                            <h4 class="card-title">¿Donde nos encontramos?</h4>
+                            <p class="card-text">Nos encontramos en Los Palacios y Villafranca (41720), un municipio de Sevilla.
+                                <br>En la calle San Sebastian Nº3.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="fotos-card" src="media/horario.jpg" alt="Steve Reeves">
+                            <h4 class="card-title">¿Cuando abrimos?</h4>
+                            <p class="card-text">Nuestro horario es:
+                                <br>De Lunes a Viernes.
+                                <br>De 9:00 a 13:30 y de 16:00 a 21:30.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-light py-5 text-center">
+        <div class="container">
+            <iframe width="60%" height="280" style="border:0" loading="lazy" allowfullscreen="" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAyv2drsb4iOZCLNtJwqf7Mq1j4a4NV3Z0&amp;q=Gimnasio+Juan+S%C3%A1nchez%2C+41720+Los+Palacios+y+Villafranca"></iframe>
+        </div>
+    </div>
+
+    <footer class="color-footer-mio text-white text-center py-3">
+        <p>&copy; 2025 Gimnasio Grecia. Todos los derechos reservados.</p>
+        <p> Calle San Sebastián, 3, 41720 Los Palacios y Villafranca, Sevilla</p>
+    </footer>
 
     <script src="js/bootstrap.bundle.js"></script>
 </body>
