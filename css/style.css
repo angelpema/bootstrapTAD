@@ -42,10 +42,6 @@
     max-height: 80vh;
 }
 
-.carrusel-flechas{
-    color: var(--btn-amarillo-mio);
-}
-
 .margen-inferior-h{
     margin-bottom: 30px;
 }
@@ -66,4 +62,8 @@ button{
 
 .fotos-card{
     width: 80%;
+}
+
+header h1{
+    color: var(--btn-amarillo-mio) !important;
 }
