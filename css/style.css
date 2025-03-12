@@ -41,17 +41,11 @@
     max-height: 80vh;
 }
 
-.margen-inferior-h{
-    margin-bottom: 30px;
-}
-
 .color-footer-mio{
     background-color: var(--color-footer-mio);
 }
 
 .header-mio{
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
     border-top: solid var(--color-footer-mio) 2px;
 }
 
