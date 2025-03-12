@@ -8,6 +8,10 @@
     --color-footer-mio: #2e2e2e;
 }
 
+body{
+    font-family: sans-serif;
+}
+
 .color-primario-mio{
     background-color: var(--color-primario-mio);
 }
